@@ -4,8 +4,6 @@ import users_pb2
 
 TOKEN = "MY TOKEN t.*******"
 
-
-
 def run():
     credentials = grpc.ssl_channel_credentials(root_certificates=None, private_key=None, certificate_chain=None)   
 
