@@ -5,6 +5,7 @@
 
 Выложено по просьбе в телеграмм канале https://t.me/joinchat/VaW05CDzcSdsPULM
 
+Установка окружения: pip install -r requirements.txt
 
 Полезные команды из Windows, VSC:
 
