@@ -9,29 +9,6 @@ import include.users_pb2_grpc
 import include.operations_pb2
 import include.operations_pb2_grpc
 
-# not test
-
-
-def PostStopOrderRequest(connection_data, figi, quantity, price, stop_price, direction, account_id, expiration_type, stop_order_type, expire_date):
-    #stub = users_pb2_grpc.UsersServiceStub(channel)
-    stub = include.stoporders_pb2_grpc.StopOrdersServiceStub(
-        connection_data['channel'])
-    response = stub.PostStopOrder(include.stoporders_pb2.PostStopOrderRequest(figi=figi, quantity=quantity, price=price, stop_price=stop_price, direction=direction,
-                                                                              account_id=account_id, expiration_type=expiration_type, stop_order_type=stop_order_type, expire_date=expire_date), metadata=connection_data['metadata'])
-    print(response)
-    return response
-
-# not test
-
-
-def CheckOrdersRequest(connection_data, account_id, order_id):
-    stub = include.orders_pb2_grpc.OrdersServiceStub(
-        connection_data['channel'])
-    response = stub.GetOrderState(include.orders_pb2.GetOrdersRequest(
-        account_id=account_id, order_id=order_id))
-    print(response)
-    return response
-
 # ok
 
 
