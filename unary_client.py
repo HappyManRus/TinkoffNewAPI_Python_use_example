@@ -1,5 +1,5 @@
 import grpc
-from include.tinkofflib import PostStopOrderRequest, CheckOrdersRequest, GetAccountsRequest, GetMarginAttributesRequest, GetWithdrawLimitsRequest, GetChannel
+from include.tinkofflib import GetAccountsRequest, GetWithdrawLimitsRequest, GetChannel, GetMarginAttributesRequest
 from config import account_id, TOKEN
 
 
