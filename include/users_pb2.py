@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 from google.protobuf import timestamp_pb2 as google_dot_protobuf_dot_timestamp__pb2
-import common_pb2 as common__pb2
+import include.common_pb2 as common__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
